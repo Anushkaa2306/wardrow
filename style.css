@@ -6,6 +6,7 @@
 body{
    background-color: rgb(98, 85, 211);
    
+   
 }
 .login{
 display: flex;
@@ -25,17 +26,18 @@ align-items: center;
     margin-right: 10px;
 }
 .dashboard{
-    background-color: rgb(245, 228, 228);
+    background-color: rgb(124, 102, 102);
     height:60vh;
     width: 50vh;
     border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(36, 19, 19, 0.6);
    
 
 }
 img{
     height:50vh;
     width: 50vh;
-    margin-top: 33px;
+    margin-top: 15px;
 }
 h1{
 font-size: 7vh;
@@ -48,10 +50,16 @@ h2{
     color: rgb(219, 182, 133);
     padding: 0 30px;
 }
-.h3{
-    font-size:9vh;
-    color: antiquewhite;
+h3{
+    font-size:5vh;
+    color: rgb(244, 232, 221);
+    margin-left: 14vh;
+    margin-top: 1vh;
     
+}
+h4{
+    margin-left:14vh ;
+    color: rgb(186, 169, 145);
 }
 .sections{
     display: flex;

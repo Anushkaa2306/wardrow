@@ -11,7 +11,7 @@ body{
 .login{
 display: flex;
 justify-content: right;
-background-color: bisque;
+background-color: rgb(244, 231, 214);
 height: 60px;
 align-items: center;
 
@@ -27,23 +27,26 @@ align-items: center;
 }
 .dashboard{
     background-color: rgb(124, 102, 102);
-    height:60vh;
-    width: 50vh;
+    height:53vh;
+    width:80vh;
     border-radius: 30px;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(36, 19, 19, 0.6);
-   
-
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(36, 19, 19, 0.6); 
+/* margin-left: 6vh; */
 }
 img{
-    height:50vh;
-    width: 50vh;
-    margin-top: 15px;
+    height:40vh;
+    width: 60vh;
+    margin-top: 9px;
+    margin-left: 70px;
+  
+   
 }
 h1{
 font-size: 7vh;
 margin-top: 50px;
 color: rgb(244, 231, 214);
-padding: 20px 30px;
+padding: 0 30px;
 }
 h2{
     font-size: 5vh;
@@ -68,9 +71,12 @@ h4{
     margin-top: 10vh;
 }
 .camera{
-    background-color: rgb(177, 175, 175);
-    height:60vh;
-    width: 50vh;
-    margin-left: 30vh;
+    background-color: rgb(124, 102, 102);
+    height:53vh;
+    width:80vh;
     border-radius: 30px;
+    
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), -10px -10px 20px rgba(36, 19, 19, 0.6); 
+margin-left: 8vh;
+
 }

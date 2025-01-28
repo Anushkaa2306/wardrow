@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+   background-color: rgb(98, 85, 211);
+   
+}
+.login{
+display: flex;
+justify-content: right;
+background-color: bisque;
+height: 60px;
+align-items: center;
+
+
+}
+.profile{
+    height: 50px;
+    width: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.dashboard{
+    background-color: rgb(245, 228, 228);
+    height:60vh;
+    width: 50vh;
+    border-radius: 30px;
+   
+
+}
+img{
+    height:50vh;
+    width: 50vh;
+    margin-top: 33px;
+}
+h1{
+font-size: 7vh;
+margin-top: 50px;
+color: rgb(244, 231, 214);
+padding: 20px 30px;
+}
+h2{
+    font-size: 5vh;
+    color: rgb(219, 182, 133);
+    padding: 0 30px;
+}
+.h3{
+    font-size:9vh;
+    color: antiquewhite;
+    
+}
+.sections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.camera{
+    background-color: rgb(177, 175, 175);
+    height:60vh;
+    width: 50vh;
+    margin-left: 30vh;
+    border-radius: 30px;
+}

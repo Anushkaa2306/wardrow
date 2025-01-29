@@ -12,16 +12,96 @@
   </b></marquee>
         <div class="profile"><button >A</button></div>
     </div>
-    <h1>"Let your wardrobe speak for you—every day is a fashion story waiting to be told."</h1>
-
-<h2>Would you like it styled differently?</h2>
+      
+    <style>
+        .typewriter p {
+          font-size: 6vh;
+          font-weight: bold;
+          color: rgb(244, 231, 214);
+          border-right: 3px solid;
+          white-space: nowrap;
+          overflow: hidden;
+          margin-top: 50px;
+          padding: 0 30px;
+        }
+      
+        /* 🎨 Extra Text के लिए Custom Styling */
+        .extra-style {
+          color: rgb(234, 212, 212);
+          font-weight: bold;
+          font-style: italic;
+          text-decoration: underline;
+          margin-top: 30px;
+          padding: 0 30px;
+        }
+      </style>
+      
+      <div class="typewriter">
+        <p id="typing-text"></p>
+      </div>
+      
+      <script>
+        const texts = [
+          "Let your wardrobe speak for you—every day is a",
+          "fashion story waiting to be told."
+        ];
+        const extraText = "Would you like it styled differently?"; // तीसरी लाइन
+      
+        let textIndex = 0;
+        let charIndex = 0;
+        let isSecondLine = false;
+        let isThirdLine = false;
+      
+        const typingSpeed = 30; 
+        const extraTypingSpeed = 30;
+      
+        function typeEffect() {
+          if (charIndex < texts[textIndex].length) {
+            document.getElementById("typing-text").innerHTML += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, typingSpeed); 
+          } else {
+            if (!isSecondLine) {
+              isSecondLine = true;
+              document.getElementById("typing-text").innerHTML += "<br>";
+              textIndex++;
+              charIndex = 0;
+              setTimeout(typeEffect, typingSpeed);
+            } else if (!isThirdLine) {
+              isThirdLine = true;
+              document.getElementById("typing-text").innerHTML += "<br><span class='extra-style' id='extra-text'></span>"; // तीसरी लाइन जोड़ें
+              charIndex = 0;
+              typeExtraText();
+            } else {
+              console.log("Text typing completed!");
+            }
+          }
+        }
+      
+        function typeExtraText() {
+          if (charIndex < extraText.length) {
+            document.getElementById("extra-text").innerHTML += extraText.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeExtraText, extraTypingSpeed); 
+          }
+        }
+      
+        typeEffect();
+      </script>
+      
+      
+      
+   
 
 <div class="sections">
  <div class="dashboard"> 
     <h3>Wardrobe</h3>
     <h4>Explore Your Wardrobe ✨!!</h4>
         <img src="/wardrobe/image.png" alt="">
-       
+        <div class="typewriter">
+            <p id="typing-text"></p>
+          </div>
+         
        
     </div>
     <div class="camera">

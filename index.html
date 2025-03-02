@@ -101,25 +101,33 @@
         typeEffect();
         document.querySelectorAll(".profile").forEach(link => {
     link.addEventListener("click", function(event) {
-        event.preventDefault();
-        window.open("https://sign-in-nkq3.vercel.app/", "_blank"); // Open in a new tab
+        event.preventDefault(); // Default action ko rokna
+        window.location.href = "https://sign-in-nkq3.vercel.app/"; // Same page me open karega
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".dashboard a").addEventListener("click", function(event) {
+        event.preventDefault(); // Default action rokna
+        window.location.href = "wdb.html"; // Make sure wdb.html exists
+    });
+});
+
+
 
 
 
       </script>
   
 <div class="sections">
- <div class="dashboard"> 
+<div class="dashboard">  <a href="#">
    <h3>Wardrobe</h3>
     <!-- <h4>Explore Your Wardrobe ✨!!</h4> -->
-         <a href="#"><img src="image.png"></a>
+       <img src="image.png"></a>
   
     </div>
     <div class="camera">
-        <h3>Camera</h3>
-        <a href="" class="img2"><img src="https://us.123rf.com/450wm/ustudent/ustudent1811/ustudent181100103/113123307-old-analog-camera-in-black-and-silver-tones-the-camera-is-photographed-on-a-dark-blurred-background.jpg?ver=]" alt=""></a>
+        <h3>suggest me my outfit</h3>
+        <a href="" class="img2"><img src="im2.png" alt=""></a>
     </div>
 </div>
 </body>

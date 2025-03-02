@@ -58,45 +58,7 @@ nav  {
     text-decoration: none;
 
   }
-  
- /* nav ul {
-    list-style-type: none;
-    padding-left: 30px;
-  }
-  
-  nav ul li {
-    text-transform: uppercase;
-    color: #fff;
-    margin: 40px 0;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-in;
-  }
-  
-  nav ul li i {
-    font-size: 20px;
-    margin-right: 10px;
-  }
-  
-  nav ul li + li {
-    margin-left: 15px;
-    transform: translateX(-150%);
-  }
-  
-  nav ul li + li + li {
-    margin-left: 30px;
-    transform: translateX(-200%);
-  }
-  
-  nav a{
-    color: #fafafa;
-    text-decoration: none;
-    transition: all 0.5s;
-  }
-  nav a:hover {
-    color: #FF7979;
-    font-weight: bold;
-  } */
-  
+
 marquee{
     font-size: 30px;
     margin-left: 300px;
@@ -125,6 +87,9 @@ align-items: center;
     justify-content: right;
     align-items: center;
     border-radius: 20px;
+}
+.dashboard a{
+  text-decoration: none;
 }
 
 .profile a {
@@ -172,60 +137,7 @@ align-items: center;
 }    
 
 
-/* .menu {
-    height: 50px;
-    width: 50px;
-    font-size: 25px;
-    text-decoration: none;
-    z-index: 9;
-    position: relative;
-    transition: all ease 0.3s;
-    overflow: hidden;
-    margin-right: 100px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
 
-.menu a {
-    text-decoration: none;
-    color: rgb(24, 5, 5);
-    background-color: rgb(244, 231, 214);
-    z-index: 9;
-   
-
-    transition: all ease 0.3s;
-    position: relative;
-    padding: 10px 15px;
-    
-    border-radius: 20px;
-}
-
-.menu::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(12, 13, 15);
-    left: 0;
-    bottom: -100%;
-    border-radius: 10px;
-    transition: all ease 0.3s;
-}
-
-.menu:hover::after {
-    bottom: 0;
-    border-radius: 0;
-    
-}
-
-.menu:hover   {
-    color: rgb(248, 239, 239);
-    background-color: transparent;
-    border: 2px solid white;
-} */
 
 button{
     height: 45px;
@@ -241,7 +153,7 @@ button{
 }
 .dashboard{
     background-color: rgb(33, 34, 42);
-    height:43vh;
+    height:55vh;
     width:73vh;
     border-radius: 30px;
     text-decoration: none;
@@ -260,7 +172,7 @@ border: 20px solid  rgb(63, 64, 73);
 
 }
 img{
-    height:30vh;
+    height:45vh;
     width: 50vh;
     margin-top: 9px;
     text-decoration: none;
@@ -301,7 +213,7 @@ h4{
 }
 .camera{
     background-color: rgb(33, 34, 42);
-    height:43vh;
+    height:55vh;
     width:73vh;
     border-radius: 30px;
     text-decoration: none;

@@ -8,6 +8,7 @@ body{
    background-position: center;
    background-size: cover;
    animation: fadeIn 1.5s ease-in-out;
+   background-color:#020203;
    
    
 }
@@ -16,15 +17,20 @@ body{
     100% { opacity: 1; filter: blur(0); }
   }
 .menu{
-height: 50px;
-width: 50px;
+height: 40px;
+width: 40px;
 color: rgb(244, 231, 214);
 text-decoration: none;
 display: flex;
 justify-content: center;
 align-items: center;
 margin-right: 25px;
+border-radius: 25px;
+margin-top: 5px;
 font-size: 35px;
+}
+.menu a{
+    border-radius: 25px;
 }
 .sections > div {
     opacity: 0;
@@ -42,7 +48,8 @@ font-size: 35px;
   
 .menu:hover{
     border: 1px solid white;
-    border-radius: 10px;
+   
+    
 
 }
 nav  {
@@ -66,14 +73,17 @@ marquee{
     margin-left: 300px;
 }
 .login{
-/* display: flex;
-justify-content: center;
+ /* display: flex;
+justify-content: center; 
 
 height: 60px;
-align-items: center; */
-
-
+align-items: center;  */
 }
+/* .nav{
+    background-color: #94aea56c;
+    height: 140px;
+    width: 100%;
+} */
 .profile {
     height: 50px;
     width: 120px;
@@ -85,11 +95,12 @@ align-items: center; */
     overflow: hidden;
     margin-right: 30px; 
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 30px;
+    /* margin-right: 20vh; */
+    margin-left: 130vh;
    
 }
 .dashboard a{
@@ -118,6 +129,7 @@ align-items: center; */
     background-color: rgb(12, 13, 15);
     left: 0;
     bottom: -100%;
+    overflow: hidden;
     border-radius: 10px;
     transition: all ease 0.3s;
 }
@@ -125,13 +137,14 @@ align-items: center; */
 .profile:hover::after {
     bottom: 0;
     border-radius: 0;
-    
+    overflow: hidden;
 }
 
 .profile:hover a {
     color: rgb(235, 225, 225);
     background-color: transparent;
     border: 1.5px solid white;
+    overflow: hidden;
 }
 @media(max-width: 1770px){
    header{
@@ -150,18 +163,19 @@ button{
     text-decoration: none;
    border: 1px solid #422f3c;
     margin-right: 10px;
-
+margin-top: 2vh;
     background-color: rgb(19, 14, 8);
     margin-left: 150px;
-    border-radius: 15px;
+    
 }
 .dashboard{
-    background-color:#19354b7c;
+    background-color: #94aea56c;
     height:55vh;
-    width:73vh;
-    border-radius: 30px;
+    width:50vh;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
     text-decoration: none;
-    
+    /* border: 5px solid  #050505 ; */
     box-shadow: 10px 10px 30px #f0f0f3, -10px -10px 20px rgba(239, 239, 240, 0.8); 
 
 /* margin-left: 6vh; */
@@ -178,10 +192,12 @@ transition: 1s ease-in-out;
 }
 img{
     height:45vh;
-    width: 50vh;
+    width: 40vh;
     margin-top: 9px;
     text-decoration: none;
-    margin-left: 80px;
+    margin-left: 50px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
     transition: 1s;
    
 }
@@ -197,11 +213,13 @@ h2{
     padding: 0 30px;
 }
 h3{
-    font-size:5vh;
+    font-size:6vh;
     color: rgb(244, 232, 221);
-    margin-left: 14vh;
+    margin-left: 16vh;
     margin-top: 1vh;
     text-decoration: none;
+    font-family: "Brush Script MT", "Lucida Handwriting", "Pacifico", cursive;;
+   
     
 }
 h4{
@@ -212,25 +230,30 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 9vh;
+    margin-top: 7vh;
     text-decoration: none;
+    gap: 10vh;
 
 }
 .camera{
-    background-color:#19354b7c;
+    background-color: #94aea56c;
     height:55vh;
-    width:73vh;
-    border-radius: 30px;
+    width:50vh;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
     text-decoration: none;
-    
+    display: inline;
+    justify-content: center;
+    align-items: center;
     box-shadow: 10px 10px 30px #e8e8eb, -10px -10px 20px rgba(239, 239, 240, 0.6); 
 margin-left: 6vh;
 transition: 1s ease-in-out;
 /* border: 20px solid  #f0cce4; */
+/* border: 5px solid  #050505 ; */
 
 }
 .camera:hover{
-    border: 5px solid  #F9EAE1 ;
+    border:  5px  solid  #e9e9ec ;
    
 
 }

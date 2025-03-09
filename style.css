@@ -4,7 +4,9 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-   background-color:#0f0f10;
+   background-image: url('https://i.pinimg.com/736x/09/d0/9e/09d09ec86ccb17880bcd03f960e91f30.jpg');
+   background-position: center;
+   background-size: cover;
    animation: fadeIn 1.5s ease-in-out;
    
    
@@ -154,7 +156,7 @@ button{
     border-radius: 15px;
 }
 .dashboard{
-    background-color:#19354b;
+    background-color:#19354b7c;
     height:55vh;
     width:73vh;
     border-radius: 30px;
@@ -215,7 +217,7 @@ h4{
 
 }
 .camera{
-    background-color:#19354b ;
+    background-color:#19354b7c;
     height:55vh;
     width:73vh;
     border-radius: 30px;

@@ -11,16 +11,42 @@
         <h1>WARDROBE</h1>
     </div>
     <div class="container">
-        <div class="panel" style="background-image: url('im3.png');">
-            <h3>CASUALS</h3>
+   <a href="#"><div class="panel1" >
+<img src="im3.png" alt="">
+       <!-- style="background-image: url('im3.png');"> -->
+        <h2>CASUALS</h2>
+           </a>
         </div>
-        <div class="panel" style="background-image: url('im4.png');">
-            <h3>TRADITIONAL </h3>
+     <a href="#">   <div class="panel2" >
+        <img src="https://i.pinimg.com/736x/f3/18/66/f31866c0bbfb4bce17ef3d325344f805.jpg" alt="">
+            <h2>TRADITIONAL </h2></a>
+
         </div>
-        <div class="panel" style="background-image: url('im5.png');">
-            <h3>FORMALS</h3>
+      <a href="#">  <div class="panel3" >
+        <img src="im5.png" alt="">
+            <h2>FORMALS</h2></a>
         </div>
         
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".panel1 a").addEventListener("click", function(event) {
+        event.preventDefault(); // Default action rokna
+        window.location.href = "http://127.0.0.1:5502/cas.html"; // Make sure wdb.html exists
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".panel2 a").addEventListener("click", function(event) {
+        event.preventDefault(); // Default action rokna
+        window.location.href = " http://127.0.0.1:5502/trad.html#"; // Make sure wdb.html exists
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".panel3 a").addEventListener("click", function(event) {
+        event.preventDefault(); // Default action rokna
+        window.location.href = "http://127.0.0.1:5502/form.html#"; // Make sure wdb.html exists
+    });
+});
+    </script>
 </body>
 </html>
